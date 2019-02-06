@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:text="Trip Name"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+
+
+
+
+        
+
+
+        />
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:layout_weight="3"
+       >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.5"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="12dp"
+       android:text="Destination"
+       android:textStyle="bold"
+
+       />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1.3"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginTop="8dp"
+       android:drawableLeft="@drawable/ic_airplanemode_active_black_24dp"
+       android:drawablePadding="16dp"
+
+       />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:layout_weight="3"
+       >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="24dp"
+       android:text="Trip Type"
+       android:textStyle="bold"
+
+       />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:orientation="horizontal"
+       >
+      <RadioGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:orientation="horizontal"
+          >
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="City Break"
+             />
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sea Side"
+             />
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Mountains"
+             />
+      </RadioGroup>
+   </LinearLayout>
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:layout_weight="2"
+       >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:layout_marginLeft="8dp"
+       android:text="Price (eur)"
+       android:textStyle="bold"
+       />
+   <SeekBar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="16dp"
+       />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="horizontal"
+       android:layout_weight="1.3"
+       >
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:text="Start Date"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+
+          android:layout_gravity="bottom"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+
+          android:text="End Date"
+          android:textStyle="bold"
+          />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_marginTop="12dp"
+       android:orientation="horizontal"
+       android:layout_weight="2"
+       >
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="56dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="8dp"
+          android:layout_gravity="center"
+          android:text="DD/MM/YYYY"
+
+          />
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="56dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="24dp"
+          android:layout_gravity="center"
+          android:text="DD/MM/YYYY" />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2.8"
+       android:orientation="vertical"
+       >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="16dp"
+       android:text="Rating"
+       android:textStyle="bold"
+       />
+   <RatingBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="4dp"
+       android:layout_gravity="left"
+       android:layout_marginLeft="16dp"
+       android:numStars="5"
+       android:stepSize="0.5"
+       />
+   </LinearLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1.8"
+       android:layout_marginTop="24dp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginBottom="32dp"
+       android:background="@color/colorPrimary"
+       android:text="SAVE"
+       android:textColor="@color/saveColor"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       />
+
+</LinearLayout>
